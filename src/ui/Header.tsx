@@ -63,13 +63,17 @@ export default function Header({
 function Logo() {
   return (
     <a href="/">
-      <img src="/logo-mobile.svg" alt="" className="sm:hidden" />
+      <img src="/logo-mobile.svg" alt="" className="h-6 w-auto sm:hidden" />
       <img
         src="/logo-dark.svg"
         alt=""
-        className="hidden sm:block dark:hidden"
+        className="hidden h-8 w-auto sm:block dark:hidden"
       />
-      <img src="/logo-light.svg" alt="" className="hidden dark:sm:block" />
+      <img
+        src="/logo-light.svg"
+        alt=""
+        className="hidden h-8 w-auto dark:sm:block"
+      />
     </a>
   );
 }
